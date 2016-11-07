@@ -1,0 +1,18 @@
+<img src="nyan.gif">
+
+<style>
+    * {
+        overflow:hidden;
+    }
+</style>
+
+<script>
+    var img = document.querySelector("img");
+    var resizer = function() {
+        
+        img.width = window.innerWidth;
+        img.height = window.innerHeight;
+    };
+    resizer();
+    window.addEventListener("resize", resizer);
+</script>
